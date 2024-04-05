@@ -1,0 +1,336 @@
+Question 1 :
+
+ubuntu@ip-172-31-0-130:~/Documents$ mkdir HR
+ubuntu@ip-172-31-0-130:~/Documents$ mkdir Operations
+ubuntu@ip-172-31-0-130:~/Documents$ mkdir Finance
+ubuntu@ip-172-31-0-130:~/Documents$ cd HR
+ubuntu@ip-172-31-0-130:~/Documents/HR$ touch Test1
+ubuntu@ip-172-31-0-130:~/Documents/HR$ touch Test2
+ubuntu@ip-172-31-0-130:~/Documents/HR$ touch Test3
+ubuntu@ip-172-31-0-130:~/Documents/HR$ cd ..
+ubuntu@ip-172-31-0-130:~/Documents$ cd Operations
+ubuntu@ip-172-31-0-130:~/Documents/Operations$ touch Operation1
+ubuntu@ip-172-31-0-130:~/Documents/Operations$ touch Operation2
+ubuntu@ip-172-31-0-130:~/Documents/Operations$ cd ..
+ubuntu@ip-172-31-0-130:~/Documents$ cd Finance
+ubuntu@ip-172-31-0-130:~/Documents/Finance$ touch Finance1
+ubuntu@ip-172-31-0-130:~/Documents/Finance$ touch Finance2
+
+
+
+
+
+
+
+Question 2 :
+
+ubuntu@ip-172-31-0-130:~/Documents/Finance$ cd ..
+ubuntu@ip-172-31-0-130:~/Documents$ cd HR
+ubuntu@ip-172-31-0-130:~/Documents/HR$ 
+ubuntu@ip-172-31-0-130:~/Documents/HR$ cp Test1 Finance
+
+
+
+
+
+
+Question 3 :
+
+ubuntu@ip-172-31-0-130:~/Documents/HR$ cd ..
+ubuntu@ip-172-31-0-130:~/Documents$ cd Finance
+ubuntu@ip-172-31-0-130:~/Documents/Finance$ mkdir Account
+
+
+
+
+
+
+
+Question 4 :
+
+ubuntu@ip-172-31-0-130:~/Documents/Finance$ cd Account
+ubuntu@ip-172-31-0-130:~/Documents/Finance/Account$ touch Account1.csv
+ubuntu@ip-172-31-0-130:~/Documents/Finance/Account$ touch Account2.csv
+
+a)
+
+ubuntu@ip-172-31-0-130:/Documents/Finance/Account$ ubuntu@ip-172-31-0-130:/Documents/Finance/Account$ echo "ParticularName - ExpensesDate - Amount" > Account1.csv && echo "Busfare - 12-Jul-2005  -2000" >> Account1.csv && echo "Coffeefare - 10-Apr-2010  -5000" >> Account1.csv && echo "Cabfare - 12-Jul-2015  -8000" >> Account1.csv && echo "Snacks - 10-Apr-2018  -10000" >> Account1.csv && echo "Dinner - 10-Apr-2018  7000" >> Account1.csv && echo "Breakfast - 10-Jun-2015  -3500" >> Account1.csv
+
+
+b) 
+
+ubuntu@ip-172-31-14-64:~/Documents/Finance/Account$ echo -e "User_Name:Name:Job Title:Office_Phone:State:Country\nchris@contoso.com:Chris Green:IT Manager:123-555-1211:WA:United States\nben@contoso.com:Ben Andrews:IT Manager:123-555-1212:TX:United States\ndavid@contoso.com:David Longmuir:IT Lead:123-555-1213:CH:India\ncynthia@contoso.comCynthia Carey:IT Team Lead:123-555-1214:DL:India\nmelissa@contoso.com:Melissa MacBeth:IT Team Lead:123-555-1215:WA:United States">Account2.csv
+
+
+
+
+
+
+
+Question 5:
+
+ubuntu@ip-172-31-0-130:~/Documents/Finance/Account$ cd ..
+ubuntu@ip-172-31-0-130:~/Documents/Finance$ cd ..
+ubuntu@ip-172-31-0-130:~/Documents$ cp -r Finance Operations
+
+
+
+
+
+
+
+
+Question 6 :
+
+ubuntu@ip-172-31-0-130:~/Documents$ cd Finance
+ubuntu@ip-172-31-0-130:~/Documents/Finance$ cd Account
+ubuntu@ip-172-31-0-130:~/Documents/Finance/Account$ mv Account2.csv Employee.csv
+
+
+
+
+
+
+
+
+Question 7 :
+
+ubuntu@ip-172-31-0-130:~/Documents$ cd HR
+ubuntu@ip-172-31-0-130:~/Documents/HR$ mv Test1 /home/ubuntu/Documents/Operations
+
+
+
+
+
+
+
+Question 8 :
+
+ubuntu@ip-172-31-0-130:~/Documents$ mv /home/ubuntu/Documents/HR/* /home/ubuntu/Documents/Operations
+ubuntu@ip-172-31-0-130:~/Documents$ cd Operations
+ubuntu@ip-172-31-0-130:~/Documents/Operations$ ls
+Finance  HR  Operation1  Operation2  Operations  Test1  Test2  Test3
+
+
+
+
+
+
+
+Question 9 :
+
+ubuntu@ip-172-31-0-130:~$ rm /home/ubuntu/Documents/HR/*
+
+
+
+
+
+
+Question 10 :
+
+ubuntu@ip-172-31-0-130:~/Documents$ rm -r /home/ubuntu/Documents/Operations/Finance
+ubuntu@ip-172-31-0-130:~/Documents$ cd Operations
+ubuntu@ip-172-31-0-130:~/Documents/Operations$ ls
+HR  Operation1  Operation2  Operations  Test1  Test2  Test3
+
+
+
+
+
+
+
+
+Question 11 :
+
+ubuntu@ip-172-31-0-130:~/Documents/Finance/Account$ cat Employee.csv
+User_Name:Name:Job Title:Office_Phone:State:Country 
+chris@contoso.com:Chris Green:IT Manager:123-555-1211:WA:United States
+ben@contoso.com:Ben Andrews:IT Manager:123-555-1212:TX:United States
+david@contoso.com:David Longmuir:IT Lead:123-555-1213:CH:India
+cynthia@contoso.comCynthia Carey:IT Team Lead:123-555-1214:DL:India
+melissa@contoso.com:Melissa MacBeth:IT Team Lead:123-555-1215:WA:United States
+
+
+
+
+
+
+Question 12 :
+
+ubuntu@ip-172-31-0-130:~/Documents$ ls -p /home/ubuntu/Documents/Finance | grep -v /
+Finance1
+Finance2
+
+
+
+
+
+
+
+Question 13 :
+
+ubuntu@ip-172-31-0-130:~$ w
+ 08:48:27 up  2:56,  0 users,  load average: 0.10, 0.03, 0.01
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+
+
+
+
+
+
+Question 14 :
+
+ubuntu@ip-172-31-0-130:~/Documents$ find /home -type f -name "T*"
+ubuntu@ip-172-31-0-130:~/Documents$ find ~ -type f -name "T*"
+
+
+
+
+
+
+Question 15 :
+
+ubuntu@ip-172-31-0-130:~$ touch /home/ubuntu/Documents/Finance.Test
+
+
+
+
+
+
+Question 16 :
+
+
+a)
+
+i)
+ubuntu@ip-172-31-0-130:~/Documents/Finance/Account$ sort Account2.csv
+ chris@contoso.com:Chris Green:IT Manager:123-555-1211:WA:United States
+User_Name:Name:Job Title:Office_Phone:State:Country 
+ben@contoso.com:Ben Andrews:IT Manager:123-555-1212:TX:United States
+cynthia@contoso.comCynthia Carey:IT Team Lead:123-555-1214:DL:India
+david@contoso.com:David Longmuir:IT Lead:123-555-1213:CH:India
+melissa@contoso.com:Melissa MacBeth:IT Team Lead:123-555-1215:WA:United States
+
+
+
+ii)
+ubuntu@ip-172-31-0-130:~/Documents/Finance/Account$ grep -c "India" Account2.csv        
+2
+
+
+iii)
+ubuntu@ip-172-31-0-130:~/Documents/Finance/Account$ tr '[:lower:]' '[:upper:]' < Account2.csv
+USER_NAME:NAME:JOB TITLE:OFFICE_PHONE:STATE:COUNTRY 
+ CHRIS@CONTOSO.COM:CHRIS GREEN:IT MANAGER:123-555-1211:WA:UNITED STATES
+BEN@CONTOSO.COM:BEN ANDREWS:IT MANAGER:123-555-1212:TX:UNITED STATES
+DAVID@CONTOSO.COM:DAVID LONGMUIR:IT LEAD:123-555-1213:CH:INDIA
+CYNTHIA@CONTOSO.COMCYNTHIA CAREY:IT TEAM LEAD:123-555-1214:DL:INDIA
+MELISSA@CONTOSO.COM:MELISSA MACBETH:IT TEAM LEAD:123-555-1215:WA:UNITED STATES
+
+
+
+iv)
+ubuntu@ip-172-31-0-130:~/Documents/Finance/Account$ grep -i '^B' Account2.csv
+
+ben@contoso.com:Ben Andrews:IT Manager:123-555-1212:TX:United States
+
+
+
+
+b)
+
+i)
+ubuntu@ip-172-31-0-130:~/Documents/Finance/Account$ awk '{print $2, $3}' Account1.csv
+
+
+ii)
+ubuntu@ip-172-31-0-130:~/Documents/Finance/Account$ grep "10-Apr-2018" Account1.csv
+Snacks - 10-Apr-2018  -10000
+Dinner - 10-Apr-2018  7000
+
+
+
+
+
+
+
+
+Question 17 :
+
+ubuntu@ip-172-31-0-130:~$ ps aux
+
+
+
+
+
+
+Question 18 :
+
+ubuntu@ip-172-31-0-130:~/Documents/HR$ touch Sample1.txt Sample2.txt
+ubuntu@ip-172-31-0-130:~/Documents/HR$ ls
+Sample1.txt  Sample2.txt
+
+
+
+
+
+
+
+Question 19 :
+
+a)
+
+ubuntu@ip-172-31-0-130:~$ chmod -R a=r /home/ubuntu/Documents/Operations
+chmod: cannot access '/home/ubuntu/Documents/Operations/Operations': Permission denied
+chmod: cannot access '/home/ubuntu/Documents/Operations/Test3': Permission denied
+chmod: cannot access '/home/ubuntu/Documents/Operations/Operation1': Permission denied
+chmod: cannot access '/home/ubuntu/Documents/Operations/Test2': Permission denied
+chmod: cannot access '/home/ubuntu/Documents/Operations/Operation2': Permission denied
+chmod: cannot access '/home/ubuntu/Documents/Operations/HR': Permission denied
+chmod: cannot access '/home/ubuntu/Documents/Operations/Test1': Permission denied
+
+
+b)
+ubuntu@ip-172-31-0-130:~$ sudo chmod -R a= /home/ubuntu/Documents/Finance
+
+c)
+ubuntu@ip-172-31-0-130:~$ sudo chmod -R a=+wx /home/ubuntu/Documents/HR
+
+d)
+ubuntu@ip-172-31-0-130:~/Documents$ sudo chown Test2 /home/ubuntu/Documents/HR/sample1.txt
+
+e)
+ubuntu@ip-172-31-0-130:~/Documents$ sudo chgrp Test1 /home/ubuntu/Documents/HR/Sample2.txt
+
+
+
+
+
+
+
+Question 20 : 
+
+a) sudo adduser Test1
+b) sudo adduser Test2
+
+
+
+
+
+
+
+
+Question 21 : 
+
+ubuntu@ip-172-31-0-130:~$ cut -d: -f1 /etc/passwd
+
+
+
+
+
+
+Question 22 : 
+
+ubuntu@ip-172-31-0-130:~/Documents$ tar -czvf Finance.tar.gz Finance
+tar: Finance: Cannot open: Permission denied
+tar: Exiting with failure status due to previous errors
